@@ -1,0 +1,39 @@
+pyinstaller --onefile email_sender.py
+
+pyinstaller .\main.py --onefile --name MontFinv1.4 --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MontFinv1.5 --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MontFinv1.6 --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MontFinv1.7 --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MonFinv1.8 --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MonFinv1.9 --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MonFinv1.10 --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MonFinv1.11 --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MonFinv1.12 --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MonFinv1.12_Iris --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MonFinv1.15 --hidden-import=openpyxl
+
+pyinstaller .\main.py --onefile --name MonFinv1.15_pick_pid --hidden-import=openpyxl
+
+pyinstaller .\main.py --onefile --name MonFinv1.16 --hidden-import=openpyxl
+pyinstaller .\main.py --onefile --name MonFinv1.17 --hidden-import=openpyxl
+
+v1.18
+pyinstaller .\main.py --onefile --name MonFinv1.18 --hidden-import=openpyxl
+- bugfix variable csv_path
+- geen import in tables
+
+v1.19
+- bugfix encoding cp1252
+pyinstaller .\main.py --onefile --name MonFinv1.19 --hidden-import=openpyxl
+
+v1.20
+- bugfix datetimeformat dienstencentra manueel | automatisch
+pyinstaller .\main.py --onefile --name MonFinv1.20 --hidden-import=openpyxl
+
+v1.21
+- bugfix NBB AnnualReport "FRANK VOORTMANS CONSULTING overwrite in csv
+- export csv files for import in MonFin
+pyinstaller .\main.py --onefile --name MonFinv1.21 --hidden-import=openpyxl
+
+pip freeze > requirements.txt
+
